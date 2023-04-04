@@ -1,0 +1,16 @@
+SkinnedMeshRenderer _smr = null;
+Mesh _sharedMeshDefault = null;
+bool _defaultShape = true;
+
+Mesh _bakedMesh = null;
+Vector3[] _jointPositions = null;
+Quaternion[] _jointRotations = null;
+
+拇指 thumb
+食指 index
+中指 middle
+无名指 ring
+小拇指 pinky
+
+Dictionary<string, Transform> _transformFromName;
+Dictionary<string, Matrix[]> JointMatrices = null;
